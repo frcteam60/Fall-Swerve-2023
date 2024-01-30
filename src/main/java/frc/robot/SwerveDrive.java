@@ -41,7 +41,7 @@ public class SwerveDrive {
 
     // Subtracts two angles
     public double angleSubtractor (double firstAngle, double secondAngle) {
-        double result = (((firstAngle - secondAngle) + 180)%360) -180;
+        double result = ((((firstAngle - secondAngle) + 180)%360 + 360) % 360) -180;
         return result;
 
     }
